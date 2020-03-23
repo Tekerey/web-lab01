@@ -1,0 +1,81 @@
+body {
+    font-family: sans-serif;
+}
+aside {
+    float: left;
+    margin-right: 10px;
+}
+aside div {
+    background-color: beige;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 10px;
+    padding-top: 1px;
+    margin-top: 10px;
+}
+header {
+    text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+    text-align: center;
+}
+a {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+form div {
+    border-top: thin solid;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+label {
+    display: inline-block;
+    padding-top: 5px;
+}
+fieldset {
+    border: none;
+    padding: 10px 0;
+    width: 350px;
+    margin: -2px;
+}
+#taskDescription {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.video {
+    margin: auto;
+    width: fit-content;
+}
+
+canvas {
+    width: 200px;
+    height: 200px;
+}
+
+.figure-div {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    display: inline-block;
+    text-align: center;
+    padding: 20px;
+    background-color: brown;
+    margin: auto;
+
+}
+
+figure p {
+    display: flex;
+    justify-content: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+}
