@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ЛР1-Завдання №1</title>
+    <link rel="stylesheet" href="css/basic.css" />
+    <script>
+        window.onload = function() {
+            var drawingCanvas = document.getElementById('circle');
+            if(drawingCanvas && drawingCanvas.getContext) {
+                var context = drawingCanvas.getContext('2d');
+                context.strokeStyle = "#000";
+                context.fillStyle = "#fc0";
+                context.beginPath();
+                context.arc(100,100,50,0,Math.PI*2,true);
+                context.closePath();
+                context.stroke();
+                context.fill();
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота №1</h1>
+    </header>
+    <h2>Завдання 1</h2>
+    <article id="taskDescription">Створити <mark>html</mark> файл з демонстрацією використання всіх нових в стандарті
+         HTML 5 тегів</article>
+    <div>
+        <audio src="src/01.mp3" controls>Тег audio не підтримується</audio>
+    </div>
+    <aside>
+        <div>
+            <header>
+                <h3>Завдання</h3>
+            </header>
+            <nav>
+                <a title="Перше завдання">Перше завдання</a><br/>
+                <a title="Друге завдання" href="lab01_t02.html">Друге завдання</a><br/>
+                <a title="Третє завдання" href="lab01_t03.html">Третє завдання</a><br/>
+                <a title="Четверте завдання" href="lab01_t04.html">Четверте завдання</a><br/>
+                <a title="П'яте завдання" href="lab01_t05.html">П'яте завдання</a>
+            </nav>
+        </div>
+    </aside>
+    <main>
+        <p dir="rtl"><bdi>שבת</bdi> — суббота</p>
+        <p>В ашкеназском произношении звучит как «ша́бос» (идиш «ша́бес»),<wbr/>
+            а в сефардском — как «шаба́т».</p>
+        <canvas id="circle" width="200" height="200"></canvas>
+        <section>
+            <p>Выберите любимого персонажа:</p>
+            <p><input list="character">
+                <datalist id="character">
+                    <option value="Чебурашка"></option>
+                    <option value="Крокодил Гена"></option>
+                    <option value="Шапокляк"></option>
+                </datalist>
+            </p>
+            <details><summary>Summary</summary>Подробнее обо всё, да ни о чём</details>
+            <dialog open>This is an open dialog window</dialog>
+        </section>
+        <embed src="src/Tekerey_Logo.png" width="128" height="128"></embed>
+        <div class="figure-div">
+            <figure>
+                <p><img src="src/Tekerey_Logo.png" alt="Tekerey logo" /></p>
+                <figcaption>Логотип</figcaption>
+            </figure>
+        </div>
+        <p>Какое-то значение: <meter value="35" max="100" low="10" high="60">Низкая</meter></p>
+        <p>Введите что-нибудь: 
+            <input type="number" name="num" autofocus></p>
+            <p>Результат: <output name="result">0</output>
+        </p>
+        <progress></progress>
+        <video width="400" height="300" controls="controls">
+            <source src="src/videoplayback.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+            Тег video не поддерживается вашим браузером. 
+            <a href="src/videoplayback.mp4">Скачайте видео</a>.
+        </video>
+        <p><time>2020-03-03</time> - дата.</p>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
